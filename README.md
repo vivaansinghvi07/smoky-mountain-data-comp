@@ -21,3 +21,9 @@
     - Plug those into a neural network to get the text
     - Get the text and process the text to make it match
     - Plug the text into the spreadsheet
+
+## Notes
+    - Vivaan:
+        - [Synthetic data generation](https://github.com/Belval/TextRecognitionDataGenerator)
+        - Font used in the labels was matched to be Sequel Sans Headline Medium
+        - Create some images with varying background noises
