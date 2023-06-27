@@ -1,3 +1,4 @@
+# USE THIS OR ANOTHER LIBRARY FOR EXCELS
 import openpyxl
 
 """  treatment, block, row,  position, and genotype """
@@ -24,6 +25,7 @@ EXAMPLE_DATA = [
 def make_sheet():
     # gets rows from varrun - assume the list of rows are in the format in EXAMPLE DATA
 
-    # todo: 
+    # TODO: 
     # create a sheet and write each row of EXAMPLE_DATA in the sheet
     # save the sheet
+    
