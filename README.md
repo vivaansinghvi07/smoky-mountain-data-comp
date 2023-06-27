@@ -9,4 +9,6 @@
 https://smc-datachallenge.ornl.gov/ch1_phenotyping/
 https://labkey.ornl.gov:8443/labkey/CBI/Martin/PUBLIC_DATA/Davis_Common_Garden_Genotypes/project-begin.view?
 
-asdfasdf
+Instructions:
+    - Varrun and Langa: Work on the text processing
+    - Chris and Pragya: Work on a function in sheet.py that takes in input and prints the row to google sheets
