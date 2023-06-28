@@ -25,22 +25,21 @@ EXAMPLE_DATA = [
 
 def make_sheet(excel_file):
     wb = Workbook()
-    line = wb.active
+    worksheet = wb.active
     
     # For writing the Header Rows on Excel
     headers = ['filename', 'treatment', 'block', 'row', 'position', 'genotype']
-    line.append(headers)
+    worksheet.append(headers)
 
     # For writing the data rows for each image in the dataset
     for item in EXAMPLE_DATA:
         rows = [item['filename'], item['treatment'], item['block'], item['row'], item['position'], item['genotype']]
-        line.append(rows)
+        worksheet.append(rows)
 
     wb.save(excel_file)
         
     
-  
-    
+  def make_sheet    
 
 
     
