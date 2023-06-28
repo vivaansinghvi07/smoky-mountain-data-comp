@@ -1,5 +1,6 @@
 # USE THIS OR ANOTHER LIBRARY FOR EXCELS
 import openpyxl
+from openpyxl import Workbook
 
 """  treatment, block, row,  position, and genotype """
 
@@ -23,7 +24,7 @@ EXAMPLE_DATA = [
 ]
 
 def make_sheet(excel_file):
-    wb = workbook()
+    wb = Workbook()
     line = wb.active
 
     headers = ['filename', 'treatment', 'block', 'row', 'position', 'genotype']
@@ -33,7 +34,7 @@ def make_sheet(excel_file):
         rows = [item['filename'], item['treatment'], item['block'], item['row'], item['position'], item['genotype']]
         line.append(rows)
 
-    workbook.save(excel_file)
+    wb.save(excel_file)
         
     
   
