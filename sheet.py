@@ -23,6 +23,20 @@ EXAMPLE_DATA = [
 ]
 
 def make_sheet():
+    wb = Workbook()
+    
+    sheet = wb.active
+    sheet.append(['filename', 'treatment', 'block', 'row',  'position', 'genotype'])
+    wb.save('~~~.xlsx')
+
+    
+
+
+    
+    
+
+
+
     # gets rows from varrun - assume the list of rows are in the format in EXAMPLE DATA
 
     # TODO: 
