@@ -22,7 +22,20 @@ EXAMPLE_DATA = [
     }
 ]
 
-def make_sheet():
+def make_sheet(excel_file):
+    wb = workbook()
+    line = wb.active
+
+    headers = ['filename', 'treatment', 'block', 'row', 'position', 'genotype']
+    line.append(headers)
+
+    for item in EXAMPLE_DATA:
+        rows = [item['filename'], item['treatment'], item['block'], item['row'], item['position'], item['genotype']]
+        line.append(rows)
+
+    workbook.save(excel_file)
+        
+    
   
     
 
