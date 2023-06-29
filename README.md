@@ -28,3 +28,4 @@
         - [Synthetic data generation](https://github.com/Belval/TextRecognitionDataGenerator)
         - Font used in the labels was matched to be Sequel Sans Headline Medium
         - Create some images with varying background noises
+
