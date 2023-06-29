@@ -42,7 +42,9 @@ def make_sheet(excel_file):
   def make_sheet    
 
 
-    
+    # Example:
+    # make_sheet(what.xlsx)
+    #
     
 
 
