@@ -16,7 +16,6 @@ then
     exit
 fi
 
-source .venv/bin/activate
 if [ ! -d ".venv/lib/*/site-packages/trdg" ] 
 then
     pip install trdg
