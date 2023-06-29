@@ -44,7 +44,7 @@ def make_sheet(excel_file):
 
     # Example:
     # make_sheet(what.xlsx)
-    #
+    # what.xlsx is excel file where data will be stored
     
 
 
