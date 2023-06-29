@@ -4,18 +4,6 @@
     Or for those having problems with their own.
 '
 
-
-# make sure user is on main directory
-if [ ! -f "README.md" ]
-then
-    cd ..
-    if [ ! -f "README.md" ]
-    then
-        echo "You must be in the main directory"
-        exit
-    fi
-fi
-
 # set up directory
 rm -rf synthetic-data
 mkdir synthetic-data synthetic-data/images 

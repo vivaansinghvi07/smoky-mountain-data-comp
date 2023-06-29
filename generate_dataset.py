@@ -1,7 +1,5 @@
 from trdg.generators import GeneratorFromStrings
 import random
-import os
-import sys
 
 ALPHABET = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 IMG_COUNT = 100
@@ -28,8 +26,7 @@ def get_random_text():
 generator = GeneratorFromStrings(
     [get_random_text() for _ in range(1000)],
     random_blur=True,
-    random_skew=True,
-    background_type=0
+    random_skew=True
 )
 i = 0
 for img, lbl in generator:
