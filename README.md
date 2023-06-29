@@ -29,4 +29,3 @@
         - Font used in the labels was matched to be Sequel Sans Headline Medium
         - Create some images with varying background noises
 
-## https://stackoverflow.com/questions/61603833/how-to-recover-accidentally-deleted-cells-in-jupyter-notebook
