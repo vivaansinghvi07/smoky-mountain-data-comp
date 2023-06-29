@@ -5,7 +5,7 @@ import sys
 
 ALPHABET = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 IMG_COUNT = 100
-EXAMPLES_PATH = sys.argv[1]
+EXAMPLES_PATH = 'examples'
 
 def get_random_text():
     treatment = random.choice(['C', 'D'])
