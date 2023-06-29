@@ -5,7 +5,7 @@ import sys
 
 ALPHABET = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 IMG_COUNT = 100
-EXAMPLES_PATH = 'examples'
+EXAMPLES_PATH = 'synthetic-data/images'
 
 def get_random_text():
     treatment = random.choice(['C', 'D'])

@@ -9,21 +9,17 @@
 if [ ! -f "README.md" ]
 then
     cd ..
+    if [ ! -f "README.md" ]
+    then
+        echo "You must be in the main directory"
+        exit
+    fi
 fi
 
-if [ ! -f "README.md" ]
-then
-    echo "You must be in the main directory"
-    exit
-fi
-
-# check to see if need to make example
-if [ ! -d "examples" ] 
-then
-    mkdir examples
-else
-    rm -rf examples/*
-fi
+# set up directory
+rm -rf synthetic-data
+mkdir synthetic-data synthetic-data/images 
+echo '*' > synthetic-data/.gitignore
 
 # clear existing directories
 rm -rf trdg
@@ -37,7 +33,6 @@ mv TextRecognitionDataGenerator/trdg .
 rm -rf trdg/fonts/latin/*
 cp image_font.ttf trdg/fonts/latin
 python3 generate_dataset.py
-echo "*" > examples/.gitignore
 
 # clear again
 rm -rf TextRecognitionDataGenerator
