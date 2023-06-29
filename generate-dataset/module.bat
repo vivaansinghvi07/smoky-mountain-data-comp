@@ -11,7 +11,7 @@ git clone https://github.com/Belval/TextRecognitionDataGenerator.git
 MOVE TextRecognitionDataGenerator\trdg .
 
 :: RUN WITH MOVED FONT
-DEL trdg\fonts\latin
+DEL /F /Q trdg\fonts\latin
 COPY image_font.ttf trdg\fonts\latin\font.ttf
 python3 generate_dataset.py
 
