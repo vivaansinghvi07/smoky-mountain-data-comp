@@ -6,7 +6,7 @@ MKDIR synthetic-data synthetic-data\images
 ECHO '*' > synthetic-data\.gitignore
 
 :: COPIES REPO AND FOLDERS
-RMDIR /R /Q trdg TextRecognitionDataGenerator
+RMDIR /S /Q trdg TextRecognitionDataGenerator
 git clone https://github.com/Belval/TextRecognitionDataGenerator.git
 MOVE TextRecognitionDataGenerator\trdg .
 
@@ -16,4 +16,4 @@ COPY image_font.ttf trdg\fonts\latin\font.ttf
 python3 generate_dataset.py
 
 :: REMOVE AFTER DONE
-RMDIR /R /Q trdg TextRecognitionDataGenerator
+RMDIR /S /Q trdg TextRecognitionDataGenerator
