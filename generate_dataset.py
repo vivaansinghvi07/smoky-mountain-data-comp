@@ -26,7 +26,8 @@ def get_random_text():
 generator = GeneratorFromStrings(
     [get_random_text() for _ in range(1000)],
     random_blur=True,
-    random_skew=True
+    random_skew=True,
+    fonts=['image_font.ttf']
 )
 i = 0
 for img, lbl in generator:
