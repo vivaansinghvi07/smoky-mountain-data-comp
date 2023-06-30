@@ -28,30 +28,15 @@ def make_sheet(excel_file):
     worksheet = wb.active
     
     # For writing the Header Rows on Excel
-    headers = ['filename', 'treatment', 'block', 'row', 'position', 'genotype']
+    headers = [*EXAMPLE_DATA[0].keys()]
     worksheet.append(headers)
 
     # For writing the data rows for each image in the dataset
     for item in EXAMPLE_DATA:
-        rows = [item['filename'], item['treatment'], item['block'], item['row'], item['position'], item['genotype']]
+        rows = [item[header] for header in headers]
         worksheet.append(rows)
 
     wb.save(excel_file)
         
-    
-  def make_sheet    
-
-
-    # Example:
-    # make_sheet(what.xlsx)
-    # what.xlsx is excel file where data will be stored
-    
-
-
-
-    # gets rows from varrun - assume the list of rows are in the format in EXAMPLE DATA
-
-    # TODO: 
-    # create a sheet and write each row of EXAMPLE_DATA in the sheet
-    # save the sheet
-    pass
+if __name__ == "__main__":
+    make_sheet('a.xlsx')
