@@ -8,6 +8,7 @@ fi
 if [ -f .venv/bin/activate ]
 then
     source .venv/bin/activate
+    echo '*' > .venv/.gitignore
     pip3 install -r requirements.txt
     echo $red"Virtual Environment Entered."$reset
 else

@@ -4,6 +4,7 @@ SET reset=[0m
 SET green=[32m
 IF EXIST .venv\ GOTO VENV_THERE
 python3 -m venv .venv
+ECHO '*' > .venv/.gitignore
 :VENV_THERE
 IF NOT EXIST .venv\Scripts GOTO WRONG_VENV
 .venv\Scripts\activate
