@@ -1,3 +1,4 @@
+@ECHO OFF
 SET red=[31m
 SET reset=[0m
 SET green=[32m
