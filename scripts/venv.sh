@@ -10,6 +10,10 @@ then
     source .venv/bin/activate
     echo '*' > .venv/.gitignore
     pip3 install -r requirements.txt
+    if [ $(uname) == "Linux" ]
+    then
+        sudo apt-get update && sudo apt-get install libgl1
+    fi
     echo $red"Virtual Environment Entered."$reset
 else
     echo $red"You have the wrong kind of venv. Try running "$green"venv.bat"$red" instead."$reset
