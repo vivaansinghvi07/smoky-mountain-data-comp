@@ -9996,3 +9996,4 @@
 .venv/lib/python3.9/site-packages/networkx-3.1.dist-info/top_level.txt
 .venv/lib/python3.9/site-packages/networkx-3.1.dist-info/WHEEL
 .venv/lib/python3.9/site-packages/pickleshare.py
+.venv/lib/python3.9/site-packages/networkx/conftest.py
