@@ -12,7 +12,7 @@ then
     pip3 install -r requirements.txt
     if [ $(uname) == "Linux" ]
     then
-        sudo apt-get update && sudo apt-get install libgl1
+        sudo apt-get update && sudo apt-get install libgl1 -y
     fi
     echo $red"Virtual Environment Entered."$reset
 else
