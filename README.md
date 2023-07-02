@@ -1,5 +1,9 @@
 # smokey-mountain-comp
 
+## Requirements
+
+Works best with Python Version 3.9. To install dependencies, see the Virtual Environments section of the `README.md` file in `scripts` directory.
+
 ## Contributors
 - [Vivaan Singhvi](https://www.github.com/vivaansinghvi07)
 - [Varrun Prakash](https://www.github.com/vman-lang)
