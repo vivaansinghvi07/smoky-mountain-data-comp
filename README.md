@@ -1,4 +1,4 @@
-# smokey-mountain-comp
+# Smoky Mountain Data Challenge
 
 ## Requirements
 
