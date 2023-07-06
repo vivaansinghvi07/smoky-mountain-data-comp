@@ -1,5 +1,19 @@
 # Smoky Mountain Data Challenge
 
+## Thoughts for Paper
+For step 1: 
+    - Discuss that the best OCR, among pytesseract, EasyOCR, KerasOCR, was PaddleOCR.
+    - It was good because it tolerated rotated images as well
+    - It read the characters reliably
+    - ~10% images were not transcribed
+    - Some discrepancies with the images caused some error
+        - Finger in front of the label - led to less treatments being read
+        - Leaves in front
+        - Labels were skewed
+    - Show sample of spreadsheet
+    - Discuss method
+        - Image read -> color converted -> read -> regexed -> spreadsheet
+
 ## Requirements
 
 Works best with Python Version 3.9. To install dependencies, see the Virtual Environments section of the `README.md` file in `scripts` directory.
