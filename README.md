@@ -17,9 +17,7 @@ Works best with Python Version 3.9. To install dependencies, see the Virtual Env
 - [Data Link](https://labkey.ornl.gov:8443/labkey/CBI/Martin/PUBLIC_DATA/Davis_Common_Garden_Genotypes/project-begin.view?)
 
 ## Instructions / TODO
-    - Vivaan: Use the software to generate training data for varruns and langas model
-    - Varrun and Langa: Work coding a neural network model for the ocr
-    - Chris and Pragya: Work on a function in sheet.py that takes in input and prints the row to google sheets
+    - Everyone: Work on step 2
 
 ## Step 1 Process
     - Process the image to make it easiest to proces text (cropping, etc)
