@@ -2,6 +2,7 @@
 
 ## Thoughts for Paper
 For step 1: 
+
     - Discuss that the best OCR, among pytesseract, EasyOCR, KerasOCR, was PaddleOCR.
     - It was good because it tolerated rotated images as well
     - It read the characters reliably
