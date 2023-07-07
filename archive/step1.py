@@ -2,19 +2,13 @@
 
 """ imports to avoid error """
 import os
-import re
 import cv2
 import math
 import random
 import imutils
 import numpy as np
-import pandas as pd
-from typing import Any
-from openpyxl import Workbook
-from paddleocr import PaddleOCR
 from matplotlib import pyplot as plt
 from trdg.generators import GeneratorFromStrings
-from tensorflow.keras.preprocessing import image as tfimage
 
 # type decls
 cv2.Image = np.ndarray
@@ -30,10 +24,6 @@ def imshow(img: cv2.Image) -> None:
 def grayscale(img: cv2.Image) -> cv2.Image:
     return cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
-# for quietly stopping jupyter cell
-class StopExecution(Exception):
-    def _render_traceback_(self):
-        pass
 
 #%%
 """ 
