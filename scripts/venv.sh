@@ -10,7 +10,7 @@ then
     source .venv/bin/activate
     echo '*' > .venv/.gitignore
     pip3 install -r requirements.txt
-    if [ $(uname) == "Linux" ]
+    if [ $(uname) = "Linux" ]
     then
         sudo apt-get update && sudo apt-get install libgl1 -y
     fi
