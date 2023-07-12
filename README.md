@@ -35,6 +35,7 @@ Works best with Python Version 3.9. To install dependencies, see the Virtual Env
 - [Competition Instructions](https://smc-datachallenge.ornl.gov/ch1_phenotyping/)
 - [Data Link](https://labkey.ornl.gov:8443/labkey/CBI/Martin/PUBLIC_DATA/Davis_Common_Garden_Genotypes/project-begin.view?)
 - [Reference for Leaf Seperation](https://github.com/julzerinos/python-opencv-leaf-detection/blob/master/PlantDetector.py)
+- [Segmentation with Tensorflow](https://www.tensorflow.org/tutorials/images/segmentation)
 
 ## Instructions / TODO
     - Everyone: Work on step 2
