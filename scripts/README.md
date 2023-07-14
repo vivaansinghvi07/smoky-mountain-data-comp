@@ -10,3 +10,4 @@ These are terminal scripts that will assist in the use of this code. All scripts
 `SAM.sh` and `SAM.bat` are short scripts that install the Segment Anything Model (SAM) into the directory in which it is used (`step2`). To run, do the following:
 - If on a Unix-based system, run `SAM.sh` using `$ sh scripts/SAM.sh`
 - If on a Windows system, run `$ .\scripts\SAM.bat`
+  - Note: You may not have `wget` installed on your device. To do this, see [this reference](https://www.jcchouinard.com/wget/).
