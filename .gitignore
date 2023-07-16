@@ -2,3 +2,4 @@ dataset/*
 .DS_STORE
 *.pyc
 sam*.pth
+*.onnx
