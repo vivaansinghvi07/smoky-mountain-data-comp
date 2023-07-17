@@ -2,7 +2,9 @@
 
 ## Getting the Dataset
 
-Visit the link [here](https://labkey.ornl.gov:8443/labkey/CBI/Martin/PUBLIC_DATA/Davis_Common_Garden_Genotypes/project-begin.view?) and download the folder. Then, unzip the download, move the folder to this repository, and rename it to 'dataset'.
+View the `load_files` scripts in the `scripts` directory to download the datasets.
+
+Alternatively, visit the link [here](https://labkey.ornl.gov:8443/labkey/CBI/Martin/PUBLIC_DATA/Davis_Common_Garden_Genotypes/project-begin.view?) and download the folder. Then, unzip the download, move the folder to this repository, and rename it to 'dataset'.
 
 ## Thoughts for Paper
 For step 1: 
