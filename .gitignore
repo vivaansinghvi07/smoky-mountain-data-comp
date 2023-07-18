@@ -3,3 +3,4 @@ dataset/*
 *.pyc
 sam*.pth
 *.onnx
+step2/seg_from_SAM/images/*
