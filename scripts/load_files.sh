@@ -21,3 +21,10 @@ then
     unzip segmentations.zip -d .
     rm -rf segmentations.zip
 fi
+
+if [ ! -d step2/leaves ]
+then 
+    gdown https://drive.google.com/uc?id=1xPq1PzkvrDI89UWNkmOiJQpl9-Augl4M
+    unzip leaves.zip -d .
+    rm -rf leaves.zip
+fi

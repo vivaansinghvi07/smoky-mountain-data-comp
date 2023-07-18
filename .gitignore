@@ -1,6 +1,12 @@
-dataset/*
-.DS_STORE
+# misc ignores
 *.pyc
+.DS_STORE
+
+# ignore models (large ones)
 sam*.pth
 *.onnx
+
+# ignore large amounts of data
+dataset/*
 step2/seg_from_SAM/images/*
+step2/leaves/*
