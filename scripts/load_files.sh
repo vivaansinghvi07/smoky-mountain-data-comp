@@ -1,3 +1,5 @@
+#!bin/bash
+
 if [ ! $(which unzip) ]
 then
     sudo apt-get install unzip
@@ -8,10 +10,10 @@ then
     pip3 install gdown
 fi
 
-if [ ! -d dataset ] || [ ! $(ls -1 dataset/ | wc -l) == 1663 ]
+if [ ! -d dataset ] || [ ! $(ls -1 dataset/ | wc -l) == 1672 ]
 then
     rm -rf dataset/
-    gdown https://drive.google.com/uc?id=1TDOCNh2FoeaKMbR9Wc-1_MsOv-54a_IV
+    gdown https://drive.google.com/uc?id=1HxbrXHX9EJButzJu0up-jcLzmBTxIxRY
     unzip dataset.zip -d .
     rm -rf dataset.zip
 fi
