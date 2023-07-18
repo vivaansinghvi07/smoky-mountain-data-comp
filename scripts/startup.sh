@@ -1,6 +1,6 @@
 # run basic startup scripts already written
 . scripts/venv.sh
-sh scripts/load_files.sh
+bash scripts/load_files.sh
 
 # get the files required for step 2
 cd step2
