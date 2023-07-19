@@ -3,9 +3,7 @@ These are terminal scripts that will assist in the use of this code. Note: These
 
 ## Startup Scripts
 
-TODO
-
-To download everything that will be used in the project, run `$ . scripts/startup.sh`
+To download everything that will be used in the project, run `$ . scripts/startup.sh`. Run this if you are just starting out.
 
 ## Venv Scripts
 `venv.sh` both run everything needed to set up the virtual environment for this project. You must be in the home directory of the project (`smoky-mountain-data-comp/`) and run `$ . scripts/venv.sh`
