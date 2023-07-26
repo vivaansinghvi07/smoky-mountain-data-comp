@@ -41,8 +41,10 @@ else
 
 fi
 
-# run script to create the paper
+# holds all files needed
 cd paper
+
+# run script to create the paper
 pdflatex main
 bibtex main
 pdflatex main 
@@ -55,3 +57,6 @@ rm main.spl
 rm main.bbl
 rm main.blg
 rm main.out
+
+# cd out of the paper dir
+cd ..
