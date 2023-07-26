@@ -1,6 +1,6 @@
 # run basic startup scripts already written
 . scripts/venv.sh
-bash scripts/load_files.sh
+./scripts/load_files.sh
 
 # get the files required for step 2
 cd step2
@@ -10,3 +10,5 @@ then
 fi
 python3 load_onnx_model.py
 cd ..
+
+./scripts/build_paper.sh
