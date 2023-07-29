@@ -25,11 +25,10 @@ High-Throughput Phenotyping using Computer Vision and Machine Learning \\
             addressline={11237 Kingston Pike},
             city={Knoxville},
             postcode={37922},
-            state={Tennesee},
+            state={Tennessee},
             country={United States}}
 
 \begin{abstract}
-%% Text of abstract
 High-throughput phenotyping refers to the non-destructive and efficient evaluation of plant phenotypes. In recent years, it has been coupled with machine learning in order to improve the process of phenotyping plants by increasing efficiency in handling large datasets and developing methods for the extraction of specific traits. Previous studies have developed methods to advance these challenges through the application of deep neural networks in tandem with automated cameras; however, the datasets being studied often excluded physical labels. In this study, we used a dataset provided by Oak Ridge National Laboratory with 1,672 images of Populus Trichocarpa with white labels displaying treatment (control or drought), block, row, position, and genotype. Optical character recognition (OCR) was used to read these labels on the plants, image segmentation techniques in conjunction with machine learning algorithms were used for morphological classifications, machine learning models were used to predict treatment based on those classifications, and analyzed encoded EXIF tags were used for the purpose of finding leaf size and correlations between phenotypes. We found that our OCR model had an accuracy of 94.31\% for non-null text extractions, allowing for the information to be accurately placed in a spreadsheet. Our classification models identified leaf shape, color, and level of brown splotches with an average accuracy of 62.82\%, and plant treatment with an accuracy of 60.08\%. Finally, we identified a few crucial pieces of information absent from the EXIF tags that prevented the assessment of the leaf size. There was also missing information that prevented the assessment of correlations between phenotypes and conditions. However, future studies could improve upon this to allow for the assessment of these features. The use of machine learning and computer vision in high-throughput phenotyping has shown to be effective in analyzing large plant datasets, leading to a more comprehensive phenotype analysis in plants and showing potential in various agricultural and environmental applications.
 \end{abstract}
 
@@ -38,12 +37,6 @@ computer vision \sep machine learning \sep high-throughput phenotyping
 \end{keyword}
 
 \end{frontmatter}
-
-%\tableofcontents
-
-%% \linenumbers
-
-%% main text
 
 \section{Introduction}
 \label{intro}
@@ -105,7 +98,7 @@ All models used in this project are trained and tested on data split by Scikit-L
 \subsection{Reading Labels with Optical Character Recognition}
 \label{step_1}
 
-To read the text, a pre-trained Optical Character Recognition (OCR) model seemed like the optimal choice. However, there are several high-performing models available for use. The three candidates chosen for this project were \verb|PyTesseract| \citep{lee2017pytesseract}, \verb|EasyOCR| \citep{jaided2020easyocr}, and \verb|PaddleOCR| \citep{du2020ppocr}.
+To read the text, a pre-trained optical character recognition (OCR) model seemed like the optimal choice. However, there are several high-performing models available for use. The three candidates chosen for this project were \verb|PyTesseract| \citep{lee2017pytesseract}, \verb|EasyOCR| \citep{jaided2020easyocr}, and \verb|PaddleOCR| \citep{du2020ppocr}.
 
 The three models were tested using metrics of performance and efficiency, which were measured through their accuracy score and time taken on a sample dataset of nine images. The results of the testing can be viewed in \ref{app_ocr_testing}.
 
@@ -344,11 +337,11 @@ Overall, the metadata embedded in the EXIF tags specific to the dataset did not 
 
 \section{Conclusions}
 
-High throughput phenotyping has gained prominence due to its potential in solving a wide variety of agricultural problems. With the world population projected to reach 9.3 billion people by 2050 and a need to produce 60\% more food \citep{silva2012feeding}, it will become crucial for researchers to discover a method for identifying productive genotypes for plant breeding. With computer vision techniques, such as Optical Character Recognition and image processing, and machine learning methods, such as classifiers to predict morphologies and treatments, productivity in the field of plant/crop production will increase rapidly, along with the accurate analysis of plants.
+High throughput phenotyping has gained prominence due to its potential in solving a wide variety of agricultural problems. With the world population projected to reach 9.3 billion people by 2050 and a need to produce 60\% more food \citep{silva2012feeding}, it will become crucial for researchers to discover a method for identifying productive genotypes for plant breeding. With computer vision techniques, such as optical character recognition and image processing, and machine learning methods, such as classifiers to predict morphologies and treatments, productivity in the field of plant/crop production will increase rapidly, along with the accurate analysis of plants.
 
 \subsection{Originality and Uniqueness}
 
-This project is one of the first to utilize \verb|PaddleOCR| \citep{du2020ppocr}, an extremely lightweight and capable Optical Character Recognition model, in the context of reading plant labels. Unlike other approaches, it is resilient to augmentations in data, such as label rotation or minor interruptions in labels.
+This project is one of the first to utilize \verb|PaddleOCR| \citep{du2020ppocr}, an extremely lightweight and capable optical character recognition model, in the context of reading plant labels. Unlike other approaches, it is resilient to augmentations in data, such as label rotation or minor interruptions in labels.
 
 It is also one of the first to use the Segment Anything Model (SAM) \citep{kirillov2023segment} in the context of leaf segmentation. When combined with image processing, leaves can now be extracted from an image with no training or processing steps for the user. The SAM allows for much more accurate masks to be obtained and is robust towards heavily noisy data such as ours. This is especially important when leaf shape needs to be classified, as accurate masks have more accurate features.
 
@@ -386,9 +379,6 @@ All code is publicly available under the MIT License on GitHub here: \url{https:
 
 We thank Dr. Ty Frazier at Oak Ridge National Laboratory for his helpful suggestions and mentoring throughout this project.
 
-%% The Appendices part is started with the command \appendix;
-%% appendix sections are then done as normal sections
-
 \bibliographystyle{elsarticle-harv}
 \bibliography{main}
 
@@ -401,19 +391,16 @@ We thank Dr. Ty Frazier at Oak Ridge National Laboratory for his helpful suggest
 \begin{center}
 	\includegraphics[width=0.45\textwidth]{images/ocr_average_accuracy.png}	
 	\captionof{figure}{Average accuracy score for reading the sample dataset for the three OCR models}
-	% \label{fig_mom0}%
 \end{center}
 
 \begin{center}
 	\includegraphics[width=0.45\textwidth]{images/pruned_ocr_average_accuracy.png}	
 	\captionof{figure}{Average accuracy score only including non-zero values (only images that were able to be read)}
-	% \label{fig_mom0}%
 \end{center}
 
 \begin{center}
 	\includegraphics[width=0.45\textwidth]{images/ocr_time_taken.png}	
 	\captionof{figure}{Total time taken for the three OCR models on the sample dataset}
-	% \label{fig_mom0}%
 \end{center}
 
 \section{Examples in the Leaf Segmentation Process}
