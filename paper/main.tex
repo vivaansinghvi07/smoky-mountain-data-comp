@@ -3,16 +3,10 @@
 \usepackage{caption}
 \usepackage[hidelinks]{hyperref}
 
-\makeatletter
-\def\ps@pprintTitle{%
-  \let\@oddhead\@empty
-  \let\@evenhead\@empty
-  \let\@oddfoot\@empty
-  \let\@evenfoot\@oddfoot
-}
-\makeatother
-
 \begin{document}
+
+\journal{SMCDC23}
+\renewcommand*{\today}{July 28, 2023}
 
 \begin{frontmatter}
 
@@ -21,11 +15,18 @@ High-Throughput Phenotyping using Computer Vision and Machine Learning \\
 \large SMC Data Challenge \#1
 }
 
-\author[]{Vivaan Singhvi}
-\author[]{Langalibalele Lunga}
-\author[]{Pragya Nidhi}
-\author[]{Chris Keum}
-\author[]{Varrun Prakash}
+\author[fhs]{Vivaan Singhvi}
+\author[fhs]{Langalibalele Lunga}
+\author[fhs]{Pragya Nidhi}
+\author[fhs]{Chris Keum}
+\author[fhs]{Varrun Prakash}
+
+\affiliation[fhs]{organization={Farragut High School},
+            addressline={11237 Kingston Pike},
+            city={Knoxville},
+            postcode={37922},
+            state={Tennesee},
+            country={United States}}
 
 \begin{abstract}
 %% Text of abstract
@@ -224,7 +225,7 @@ Out of all the metadata extracted from the EXIF tags, the most notable pieces of
 
 Another approach we considered to measure leaf size included using the white labels, held up by the researcher in each image, as a known reference object. Although this method seemed promising, there were certain limitations in most images in the dataset that prevented a consistent measurement. First, the white label in the image was often obstructed by the researcher’s hands, as shown in \ref{app_blocked}. This obstruction would ultimately interfere with the alignment of the white label, making the label unreliable as an object of reference. Another limitation to this method came from the fact that the labels were often tilted, not in the same plane as the leaves. The tilt of the labels caused inaccuracies in measurement and would lead to misrepresentation of the true length. Along with that, there was no way of finding out how far forward or behind the leaf was relative to the tag, meaning the method would result in an inaccurate representation of the leaf. Again, this issue could have been resolved with more careful documentation of images without obstruction and a better-positioned label alignment.
 
-In the second part of challenge 4, we aimed to find a correlation between phenotypes and environmental features, such as soil type and weather conditions. Using the EXIF tags, we were able to retrieve the coordinates where the image was taken. We noticed all of the images contained were taken in approximately the same two locations, so any weather or soil API would be unable to provide specific conditions. If we were given this information as part of the dataset, we would have been better able to find correlations. Regardless, a study on how the temperature affects the phenotype and development plasticity in Arabidopsis Thaliana \citep{ibanez2017ambient} placed the plants in different temperature environments in order to measure their differences. If we had more information regarding the conditions in which the plants were raised, we would be better able to determine if there was a correlation between phenotypes and environment.
+In the second part of challenge 4, we aimed to find a correlation between phenotypes and environmental features, such as soil type and weather conditions. Using the EXIF tags, we were able to retrieve the coordinates where the image was taken. We noticed all of the images contained were taken in approximately the same location, so any weather or soil API would be unable to provide specific conditions. If we were given this information as part of the dataset, we would have been better able to find correlations. Regardless, a study on how the temperature affects the phenotype and development plasticity in Arabidopsis Thaliana \citep{ibanez2017ambient} placed the plants in different temperature environments in order to measure their differences. If we had more information regarding the conditions in which the plants were raised, we would be better able to determine if there was a correlation between phenotypes and environment.
 
 
 \section{Results and Discussion}
@@ -383,7 +384,7 @@ All code is publicly available under the MIT License on GitHub here: \url{https:
 \section*{Acknowledgements}
 \label{acknowledgements}
 
-We would like to thank Dr. Ty Frazier for his suggestions and mentoring throughout this project.
+We thank Dr. Ty Frazier at Oak Ridge National Laboratory for his helpful suggestions and mentoring throughout this project.
 
 %% The Appendices part is started with the command \appendix;
 %% appendix sections are then done as normal sections
