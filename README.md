@@ -27,13 +27,13 @@ smoky-mountain-data-comp
 ├─ adjust_sheets.py         // format all the sheets for each step to look nicer
 ├─ paper                    
 │  ├─ images                    // contains images used in the paper
-│  │  ├─ ... 
+│  │  └─ ... 
 │  ├─ main.bib                  // bibliography for paper
 │  ├─ main.pdf                  // pdf of paper
 │  └─ main.tex                  // paper in latex
 ├─ requirements.txt         // information about dependencies
 ├─ sample_dataset           // a sample of the images in the main dataset
-│  ├─ ...
+│  └─ ...
 ├─ scripts                  // Unix shell scripts, helpful in project
 │  ├─ README.md                
 │  ├─ build_paper.sh            // compiles the paper with pdflatex
