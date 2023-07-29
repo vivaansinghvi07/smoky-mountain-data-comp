@@ -4,7 +4,7 @@ Code for our submission to the SMC Data Challenge #1, machine-learning apporache
 
 ## Setup
 
-If the repository is newly cloned, run `$ ./scripts/startup.sh`. See more information about scripts in the `scripts/` folder [here](https://github.com/vivaansinghvi07/smoky-mountain-data-comp/tree/main/scripts). Note: all scripts can only be run on a Unix-based system, not Windows.
+If the repository is newly cloned, run `$ . scripts/startup.sh`. See more information about scripts in the `scripts/` folder [here](https://github.com/vivaansinghvi07/smoky-mountain-data-comp/tree/main/scripts). Note: all scripts can only be run on a Unix-based system, not Windows.
 
 ## Getting the Dataset
 
@@ -14,7 +14,7 @@ Visit the link [here](https://labkey.ornl.gov:8443/labkey/CBI/Martin/PUBLIC_DATA
 
 ## Requirements
 
-This project works with Python 3.9/3.10 (not tested with Python versions lower than 3.9). To install dependencies, run `$ ./scripts/venv.sh`.
+This project works with Python 3.9/3.10 (not tested with Python versions lower than 3.9). To install dependencies, run `$ . scripts/venv.sh`.
 
 ## File Tree
 
