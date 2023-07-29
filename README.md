@@ -1,6 +1,6 @@
 # SMC Data Challenge
 
-Code for our submission to the SMC Data Challenge #1, machine-learning apporaches to high-throughput phenotyping. View the solution paper [here](https://github.com/vivaansinghvi07/smoky-mountain-data-comp/blob/main/paper/main.pdf).
+Code for our submission to the SMC Data Challenge #1, machine-learning approaches to high-throughput phenotyping. View the solution paper [here](https://github.com/vivaansinghvi07/smoky-mountain-data-comp/blob/main/paper/main.pdf).
 
 ## Setup
 
@@ -39,7 +39,7 @@ smoky-mountain-data-comp
 │  ├─ build_paper.sh            // compiles the paper with pdflatex
 │  ├─ load_files.sh             // gets all large image folders needed for this code
 │  ├─ startup.sh                // general startup script - does everything needed
-│  └─ venv.sh                   // creates virtual environment and installs dependencies
+│  └─ venv.sh                   // creates a virtual environment and installs dependencies
 ├─ step1                    
 │  ├─ archive                   // contains old, unused code
 │  │  ├─ generate_data.py           // was used to generate synthetic data for training OCR
@@ -54,7 +54,7 @@ smoky-mountain-data-comp
 ├─ step2
 │  ├─ archive                   // contains old, unused code
 │  │  ├─ model_from_contour.ipynb   // used to predict if a leaf was good or not from the contour itself 
-│  │  └─ seg_from_contour           // files for above model
+│  │  └─ seg_from_contour           // files for the above model
 │  │     ├─ data.csv                    // training data
 │  │     ├─ model.pkl                   // model itself
 │  │     └─ scaler.pkl                  // StandardScaler
@@ -79,7 +79,7 @@ smoky-mountain-data-comp
 ├─ step3
 │  ├─ data.xlsx                 // main spreadsheet after step 3 is done
 │  ├─ main.ipynb                // all code required to run 
-│  └─ model.pkl                 // model stored in pickle file
+│  └─ model.pkl                 // model stored in a pickle file
 └─ step4
    └─ main.ipynb                // all code required to run
 ```
