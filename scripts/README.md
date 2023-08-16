@@ -20,4 +20,4 @@ To download everything that will be used in the project, run `$ . scripts/startu
 To load data and large image folders, run `$ ./scripts/load_files.sh`.
 
 ## Building Paper
-The solution paper for this project is written in LaTeX. To build a PDF for the paper, simply run `$ ./scripts/build_paper.sh`.
+The solution paper for this project is written in LaTeX. To build a PDF for the paper, simply run `$ ./scripts/build_paper.sh`. Note: due to some import complications, the poster is not built with this script.
