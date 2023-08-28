@@ -70,6 +70,8 @@ smoky-mountain-data-comp
 │  │  ├─ encoders.pkl               // LabelEncoders for y-values
 │  │  ├─ model.pkl                  // model itself
 │  │  └─ scaler.pkl                 // StandardScaler
+│  ├─ pipeline                  // contains images showing the steps of the image processing pipeline
+│  │  └─ ...
 │  └─ seg_from_SAM              // stores files for the segmentation filter model
 │     ├─ data.csv                   // training data
 │     ├─ images                     // example images of masks generated
