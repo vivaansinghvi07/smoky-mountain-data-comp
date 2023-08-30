@@ -47,10 +47,12 @@ smoky-mountain-data-comp
 │  │     └─ image_font.ttf              // the font used in the white label
 │  ├─ data.xlsx                 // product of step 1
 │  ├─ main.ipynb                // all code for solving the first step
-│  └─ ocr_test                  // testing possible OCR models
-│     ├─ read_texts.csv             // stores texts read by each model
-│     ├─ test_models.ipynb          // main notebook for testing and displaying the graphs
-│     └─ timer.txt                  // stores times taken by each model
+│  ├─ ocr_test                  // testing possible OCR models
+│  │  ├─ read_texts.csv             // stores texts read by each model
+│  │  ├─ test_models.ipynb          // main notebook for testing and displaying the graphs
+│  │  └─ timer.txt                  // stores times taken by each model
+│  └─ pipeline                  // contains images showing the steps of the image augmentation pipeline
+│     └─ ...
 ├─ step2
 │  ├─ archive                   // contains old, unused code
 │  │  ├─ model_from_contour.ipynb   // used to predict if a leaf was good or not from the contour itself 
