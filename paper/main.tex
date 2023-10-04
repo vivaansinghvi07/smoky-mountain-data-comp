@@ -66,12 +66,12 @@ In this study, we aim to develop an accurate machine learning model for high-thr
 \section{Related Works}
 \label{related_works}
 
-Traditionally, plant morphologies would be analyzed manually, wasting time and potentially damaging the environment. However, current breakthroughs in high-throughput phenotyping led by machine learning techniques\citep{koh2021automated, pound2017deep} and computer vision with deep learning \citep{mochida2019computer} have allowed for efficient and timely analyses of plant phenotypes. With these methods, researchers can extract features from plants and classify their morphologies effectively while having little effect on the plant itself.
+Traditionally, plant morphologies would be analyzed manually, wasting time and potentially damaging the environment. However, current breakthroughs in high-throughput phenotyping led by machine learning techniques \citep{koh2021automated, pound2017deep} and computer vision with deep learning \citep{mochida2019computer} have allowed for efficient and timely analyses of plant phenotypes. With these methods, researchers can extract features from plants and classify their morphologies effectively while having little effect on the plant itself.
 
 \subsection{Advancements in High Throughput Phenotyping Techniques}
 \label{related_works_1}
 
-Advancements in the field of plant phenotyping have been pioneered by technology. From using hardware, such as Raspberry Pi imaging systems \citep{tausen2020greenotyper} to thermographic sensing techniques \citep{walter2015plant}, research in the field of high-throughput phenotyping has led to an acceleration in working efficiency. Plants are now able to be analyzed in fast, effective, and accurate methods allowing for them to be used in scientific discoveries. In our study, we rely on machine learning techniques to classify morphologies based on a phone image dataset provided.
+Advancements in the field of plant phenotyping have been pioneered by technology. From using hardware, such as Raspberry Pi imaging systems \citep{tausen2020greenotyper} to thermographic sensing techniques \citep{walter2015plant}, research in the field of high-throughput phenotyping has led to an acceleration in working efficiency. Plants are now able to be analyzed in fast, effective, and accurate methods allowing for them to be used in scientific discoveries. In our study, we rely on machine learning techniques to classify morphologies based on a plant image dataset provided.
 
 \subsection{Machine Learning Approaches for Phenotypic Analysis}
 \label{related_works_2}
@@ -218,7 +218,14 @@ Out of all the metadata extracted from the EXIF tags, the most notable pieces of
 
 Another approach we considered to measure leaf size included using the white labels, held up by the researcher in each image, as a known reference object. Although this method seemed promising, there were certain limitations in most images in the dataset that prevented a consistent measurement. First, the white label in the image was often obstructed by the researcher’s hands, as shown in \ref{app_blocked}. This obstruction would ultimately interfere with the alignment of the white label, making the label unreliable as an object of reference. Another limitation to this method came from the fact that the labels were often tilted, not in the same plane as the leaves. The tilt of the labels caused inaccuracies in measurement and would lead to misrepresentation of the true length. Along with that, there was no way of finding out how far forward or behind the leaf was relative to the tag, meaning the method would result in an inaccurate representation of the leaf. Again, this issue could have been resolved with more careful documentation of images without obstruction and a better-positioned label alignment.
 
-In the second part of challenge 4, we aimed to find a correlation between phenotypes and environmental features, such as soil type and weather conditions. Using the EXIF tags, we were able to retrieve the coordinates where the image was taken. We noticed all of the images contained were taken in approximately the same location, so any weather or soil API would be unable to provide specific conditions. If we were given this information as part of the dataset, we would have been better able to find correlations. Regardless, a study on how the temperature affects the phenotype and development plasticity in Arabidopsis Thaliana \citep{ibanez2017ambient} placed the plants in different temperature environments in order to measure their differences. If we had more information regarding the conditions in which the plants were raised, we would be better able to determine if there was a correlation between phenotypes and environment.
+In the second part of challenge 4, we aimed to find a correlation between phenotypes and environmental features, such as soil type and weather conditions. Using the EXIF tags, we were able to retrieve the coordinates where the image was taken. However, we noticed all of the images contained were taken in approximately the same location.
+
+\begin{center}
+    \includegraphics[width=0.45\textwidth]{images/plant_locs.png}
+    \captionof{figure}{Geographical plot of all plants using encoded EXIF GPS data.}
+\end{center}
+
+Therefore, any weather or soil API would be unable to provide specific conditions. If we were given this information as part of the dataset, we would have been better able to find correlations. Regardless, a study on how the temperature affects the phenotype and development plasticity in Arabidopsis Thaliana \citep{ibanez2017ambient} placed the plants in different temperature environments in order to measure their differences. If we had more information regarding the conditions in which the plants were raised, we would be better able to determine if there was a correlation between phenotypes and environment.
 
 
 \section{Results and Discussion}
@@ -365,9 +372,9 @@ However, if the same dataset is used, future researchers could build more accura
 
 \subsection{Future Directions}
 
-Future research could be done in expanding the species analyzed for morphology classifications. In this study, only Populus Trichocarpae were used, so the models used may only be effective on this species.
+Future research could be done to expand the species analyzed for morphology classifications. In this study, only Populus Trichocarpae were used, so the models used may only be effective on this species.
 
-Since a pretrained segmentation model (the SAM) was used in this study, researchers could attempt to build segmentation models fine-tuned to only recognize leaves, which could increase model efficiency and provide more consistent results.
+Since a pre-trained segmentation model (the SAM) was used in this study, researchers could attempt to build segmentation models fine-tuned to only recognize leaves, which could increase model efficiency and provide more consistent results.
 
 \section{Code Availability}
 \label{code}
@@ -382,7 +389,7 @@ We thank Dr. Ty Frazier at Oak Ridge National Laboratory for his helpful suggest
 \bibliographystyle{elsarticle-harv}
 \bibliography{main}
 
-\newpage
+\clearpage
 \appendix
 
 \section{Results of OCR Model Testing}
